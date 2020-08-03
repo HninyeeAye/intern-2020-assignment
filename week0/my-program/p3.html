@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week_0 JavaScript Assigment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    </head>
+<style>
+.aa{
+background-image:url("p1.jpg");
+
+background-repeat:no-repeat;
+background-size: cover;
+}
+.bb{
+text-align:center;
+}
+</style>
+
+ <body class="aa">
+
+<h1 style="text-align:center">Calculating Discount</h1>
+
+<form style="text-align:center">
+   
+<label for="oldprice" style="color:green">Oldprice</label>
+<input type="text" id="oldprice" />
+
+</form>
+<br>
+
+<form style="text-align:center">
+<label for="Discount" style="color:green">Discount</label>
+<input type="text" id="discount" />
+</form>
+
+<br>
+
+
+<br>
+    <div class="bb">
+     <button onclick="calculate()">Calculate</button>
+</div>
+<br>
+
+<form style="text-align:center">
+   
+<label for="Newprice" style="color:green">Newprice</label>
+<input type="text" id="newprice"  />
+
+</form>
+
+<script>
+
+calculate=function(){
+var n1=Number(document.getElementById("oldprice").value);
+var n2=Number(document.getElementById("discount").value)/100;
+var result=n1-(n1*n2)
+document.getElementById("newprice").value=result;
+}
+
+</script>
+
+
+</body>
+</html>
