@@ -1,0 +1,1 @@
+insert into teacher values('3','Mawlamyine','Daw Aye Aye','09792234578','Headmistress');
