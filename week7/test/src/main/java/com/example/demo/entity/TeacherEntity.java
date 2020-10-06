@@ -21,14 +21,11 @@ public class TeacherEntity {
 		@Column
 		String name;
 		 
-		@Column
-		String address;
 		
 		@Column
 		String phoneNo;
 		 
-		@Column
-		String email;
+		
 
 		public TeacherEntity() {
 			
@@ -50,13 +47,7 @@ public class TeacherEntity {
 			this.name = name;
 		}
 
-		public String getAddress() {
-			return address;
-		}
-
-		public void setAddress(String address) {
-			this.address = address;
-		}
+		
 
 		public String getPhoneNo() {
 			return phoneNo;
@@ -66,12 +57,6 @@ public class TeacherEntity {
 			this.phoneNo = phoneNo;
 		}
 
-		public String getEmail() {
-			return email;
-		}
-
-		public void setEmail(String email) {
-			this.email = email;
-		}
+		
 
 }

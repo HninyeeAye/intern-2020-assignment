@@ -24,17 +24,17 @@ TeacherRepository teacherRepository;
 		// TODO Auto-generated method stub
 		return teacherRepository.save(teacher);
 	}
-	
+	public TeacherEntity save(TeacherEntity teacher) {
+		return teacherRepository.save(teacher);
+	}
+	public List<TeacherEntity> searchTeacher(String name,String phoneNo){
+		return teacherRepository.searchEntity(name, phoneNo);
+	}
 	public TeacherEntity findById(long id) {
 		return teacherRepository.findById(id).orElse(null);
 	}
 	
-	public void deleteTeacher(long id) {
-		teacherRepository.deleteById(id);
-	}
+
 	
-	public List<TeacherEntity> searchTeacher(String teacherName, String teacherPhone) {
-		//TODO Auto-generated method stub
-		 return teacherRepository.searchEntity(teacherName,teacherPhone);
-	}
+	
 }
